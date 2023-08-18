@@ -2,6 +2,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
+import AboutMe from "./components/AboutMe";
 import Particles from "react-tsparticles";
 import { useCallback } from "react";
 import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
@@ -18,7 +19,7 @@ const App = () => {
 
   return (
     <div>
-      <Particles
+      {/* <Particles
         className="particles-canvas"
         id="tsparticles"
         init={particlesInit}
@@ -82,10 +83,14 @@ const App = () => {
             },
           },
           detectRetina: true,
+          fullScreen: {
+            enable: false,
+          },
         }}
-      />
+      /> */}
       <Navbar />
       <Header />
+      <AboutMe />
     </div>
   );
 };

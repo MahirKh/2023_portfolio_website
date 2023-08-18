@@ -78,13 +78,14 @@ nav ul li {
 /* *************** Header ***************** */
 
 .header-wraper {
-  /* position: relative; */
+  position: top;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(nasa-Q1p7bh3SHj8-unsplash.jpg) no-repeat;
   /* background: rgb(60,90,207);
   background: linear-gradient(90deg, rgba(60,90,207,1) 16%, rgba(49,111,215,1) 38%, rgb(23, 123, 199) 71%, rgb(50, 159, 180) 100%); */
   background-size: cover;
   background-position: center;
   height: 100vh;
+  z-index: 1;
 }
 
 .main-info {
@@ -100,6 +101,8 @@ nav ul li {
   align-items: center;
   text-align: center;
   z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .main-info h3 {
@@ -153,13 +156,15 @@ nav ul li {
 
 /* *************** Header Main Offer Button ***************** */
 .btn-main-offer {
-  border: 1px solid var(--primary-red);
+  /* border: 1px solid var(--primary-red); */
+  background-color: var(--primary-dark) !important;
   text-transform: uppercase;
   border-radius: 20px;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   color: var(--primary-white);
   margin: 2rem;
   text-decoration: none;
+  font-size: 1.4rem;
 }
 
 .btn-main-offer:hover {
@@ -171,11 +176,11 @@ nav ul li {
 
 /* *************** Particles ***************** */
 
-.tsparticles-canvas {
-  position: absolute;
+.particles-canvas {
+  position: top;
   height: 100vh;
   width: 100vw;
-  z-index: 1;
+  z-index: -1;
 }
 
 @media(max-width: 768px) {
@@ -186,6 +191,14 @@ nav ul li {
 
 
 /* *************** About Me ***************** */
+
+.aboutMe{
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  z-index: 1;
+}
 
 .photo-wrap {
   display: flex;
