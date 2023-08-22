@@ -12,22 +12,21 @@ const AboutMe = () => {
         <div className="col-lg-8 col-xm-12">
           <h1 className="about-heading">about me</h1>
           <p>
-            My name is Mahir Khandaker and I am currently in my fourth year of a
-            five-year Electrical and Biomedical Engineering Co-op program at
-            McMaster University.
+            Hi, I'm Mahir Khandaker—a recent Electrical and Biomedical
+            Engineering graduate with a versatile skill set and a fervent
+            passion for software development, technology innovation, and web
+            solutions. My educational journey at McMaster University, combined
+            with hands-on experiences at TD and Molex, has fueled a deep
+            fascination with technology and a dedication to creating innovative
+            solutions in every project I undertake.
             <br></br>
-            <br></br>I am passionate about working with technology and creating
-            ways to innovate aspects of any project I participate in. My
-            education at McMaster University has enhanced my technical skills
-            and my ability to apply my knowledge in communication systems,
-            electronic circuits, and object-oriented and embedded systems
-            programming in Python, Java, C and C++.
-            <br></br>
-            <br></br>
-            Additionally, outside of my university education I have deepened my
-            knowledge in full-stack development. I utilized these skills when
-            creating and designing web and android applications which are listed
-            down below.
+            <br></br>Throughout my time at McMaster University and my co-op
+            terms, I meticulously honed my technical proficiencies, with a focus
+            on communication systems, electronic circuits, and object-oriented
+            and embedded systems programming. I'm adept in languages like
+            Python, Java, C, and C++. Beyond formal education, I've also
+            ventured into the realm of full-stack development, actively applying
+            my skills to craft exceptional web and mobile applications.
             <br></br>
             <br></br>
             <h4>Technical Skills</h4>
