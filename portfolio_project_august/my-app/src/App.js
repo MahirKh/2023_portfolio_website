@@ -3,6 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
+import Experience from "./components/Experience";
+import Portfolio from "./components/Portfolio";
 import Particles from "react-tsparticles";
 import { useCallback } from "react";
 import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
@@ -91,6 +93,8 @@ const App = () => {
       <Navbar />
       <Header />
       <AboutMe />
+      <Experience />
+      <Portfolio />
     </div>
   );
 };
