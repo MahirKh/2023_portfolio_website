@@ -765,3 +765,24 @@ textarea .form-control {
     padding: 0 0.4rem;
   }
 }
+
+/* ***************** Footer Component ***************************  */
+.footer {
+  background: var(--primary-black);
+  color: rgba(255, 255, 255, 0.476);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-dark-gray);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-orange)
+}
+
+.footer p {
+  margin-bottom: 0;
+}

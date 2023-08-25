@@ -6,6 +6,7 @@ import AboutMe from "./components/AboutMe";
 import Experience from "./components/Experience";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import Particles from "react-tsparticles";
 import { useCallback } from "react";
 import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
@@ -97,6 +98,7 @@ const App = () => {
       <Experience />
       <Portfolio />
       <Contact />
+      <Footer />
     </div>
   );
 };
