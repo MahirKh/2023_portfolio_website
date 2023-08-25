@@ -9,7 +9,13 @@ const Navbar = () => {
   return (
     <nav id="mainNavbar" className="navbar navbar-expand-lg fixed-top">
       <div className="container">
-        <Link className="navbar-brand" smooth={true} to="home" href="#">
+        <Link
+          className="navbar-brand"
+          smooth={true}
+          to="home"
+          href="#"
+          duration={200}
+        >
           Mahir Khandaker
         </Link>
         <button
@@ -33,6 +39,7 @@ const Navbar = () => {
                 offset={-50}
                 className="nav-link"
                 href="#"
+                duration={250}
               >
                 Home <span className="sr-only">(current)</span>
               </Link>
@@ -44,6 +51,7 @@ const Navbar = () => {
                 offset={-50}
                 className="nav-link"
                 href="#"
+                duration={250}
               >
                 about me
               </Link>
@@ -54,10 +62,11 @@ const Navbar = () => {
             <li className="nav-item">
               <Link
                 smooth={true}
-                to="portfolio"
+                to="experience"
                 offset={-50}
                 className="nav-link"
                 href="#"
+                duration={250}
               >
                 experiences
               </Link>
@@ -69,6 +78,7 @@ const Navbar = () => {
                 offset={-50}
                 className="nav-link"
                 href="#"
+                duration={250}
               >
                 portfolio
               </Link>
@@ -76,7 +86,7 @@ const Navbar = () => {
             <li className="nav-item">
               <Link
                 smooth={true}
-                to="contacts"
+                to="contact"
                 offset={-50}
                 className="nav-link"
                 href="#"

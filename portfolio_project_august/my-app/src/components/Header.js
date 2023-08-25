@@ -2,6 +2,9 @@ import React from "react";
 import Typed from "react-typed";
 import { Link } from "react-scroll";
 import Mahir_Khandaker_Resume from "./MahirKhandaker_Resume_August2023.pdf";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
@@ -32,6 +35,17 @@ const Header = () => {
         >
           Download Resume
         </a>
+        <div className="socialMedia">
+          <a href="https://www.linkedin.com/in/mahir-khandaker/">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+          <a href="https://github.com/MahirKh">
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+          <a href="mailto:khandakm@mcmaster.ca">
+            <FontAwesomeIcon icon={faEnvelope} />
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -11,6 +11,7 @@
   --primary-red-hover: #ef4135a9;
   --primary-black: #000000;
   --primary-green: green;
+  /* --primary-dark: rgb(38, 124, 71); */
 }
 
 body {
@@ -155,6 +156,9 @@ nav ul li {
   .btn-main-offer{
     font-size: 1rem !important;
   }
+  .socialMedia {
+    font-size: 2rem !important;
+  }
 }
 
 /* *************** Header Main Offer Button ***************** */
@@ -177,6 +181,22 @@ nav ul li {
   transition: 0.2s ease-in-out !important;
 }
 
+.socialMedia {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  color: white;
+  padding: 1%;
+  cursor: pointer;
+  font-size: 3rem;  
+}
+
+.socialMedia a {
+  text-decoration: none;
+  /* Remove underline */
+  color: inherit;
+}
+
 /* *************** Particles ***************** */
 
 .particles-canvas {
@@ -195,8 +215,14 @@ nav ul li {
 
 /* *************** About Me ***************** */
 
-.aboutMe{
+.aboutMeContainer{
+    background-color: var(--pimrary-light-grey);
+}
+
+.aboutMe {
   position: relative;
+  display: flex;
+  flex-direction: column;
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -636,10 +662,19 @@ body.active-modal {
   font-size: 1.2rem;
 }
 
+.form-control::placeholder {
+  color:var(--primary-white) !important;
+}
+
 /* *************** Inputs ***************** */
 
 .contacts .container {
-  width: 25%;
+  width: 50%;
+}
+
+@media(max-width:900px) {
+  .contacts .container{
+  width: 100%;  }
 }
 
 .contacts input,
@@ -678,6 +713,7 @@ body.active-modal {
   margin: 1rem 0 0 0;
   width: 100%;
   background: none;
+  border: 1px solid var(--primary-red);
 }
 
 .line {
@@ -690,7 +726,7 @@ body.active-modal {
 }
 
 input:focus+.line,
-textarea:focus+.line {
+.message:focus+.line {
   width: 100%;
   transition: width 0.5s ease-in-out;
 }
